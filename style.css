@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+.tt{
+    background-color:  rgb(71, 71, 194);
+}
+.tn{
+background-color: rgb(71, 71, 194);
+}
+body{
+background-color: #131316;
+color: #ffffff;
+font-family: 'poppins',sans-serif;
+padding: 0;
+margin: 0;
+font-size:30px;
+
+}
+section {
+    color:#eee;
+    display:grid; 
+    place-items: center;
+    align-content: center;
+    min-height: 100vh;
+}
+.hidden {
+opacity: 0;
+filter: blur(50px);
+transform: translateX(-100%);
+transition: all 2s;
+
+}
+
+@media (prefers-reduced-motion) {
+    .hidden{
+    transition: none;
+    }
+}
+.show{
+opacity: 1;
+filter: blur(0);
+transform: translateX(0);
+
+}
